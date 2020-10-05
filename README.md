@@ -1,5 +1,9 @@
 ## ocaml-docker
 
+```
+docker run -it jdan/ocaml-docker
+```
+
 This repo builds an image for OCaml development, including:
 
 - OCaml 4.08.1
