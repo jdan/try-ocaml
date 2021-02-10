@@ -1,15 +1,20 @@
-## ocaml-docker
+## try-ocaml
 
-```
-docker run -it jdan/ocaml-docker
-```
+This repository allows you to try [the OCaml programming language](https://ocaml.org/) and some of its tools including merlin, ocp-indent, ocamlbuild, and the [OCaml and Reason IDE](https://marketplace.visualstudio.com/items?itemName=freebroccolo.reasonml) extension in a [VSCode Dev Container](https://code.visualstudio.com/docs/remote/containers).
 
-This repo builds an image for OCaml development, including:
+### Usage
 
-- OCaml 4.08.1
-- opam 2.0.7
-- merlin, ocp-indent, ocamlbuild
+1. Install [Docker](https://docs.docker.com/get-docker/).
+2. Install the [Remote Development extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack).
+3. Clone this repo.
+4. In VS Code, either:
+    - "Open folder..." the cloned repo, then click the "Reopen in container" button that appears in the lower right.
+    OR
+    - F1 and "Remote-Containers: Open Folder in Container..." the cloned repo.
+5. Make any edits you'd like to the `src/` directory.
+6. In VS Code, open a New Terminal from the Terminal menu.
+7. Run `make run`
 
-A sample OCaml project is included in the `~/code` directory, with a `.merlin` configuration and `Makefile`.
+### Thanks
 
-Additionally, a `.vscode` folder will recommend users install the [OCaml and Reason IDE](https://marketplace.visualstudio.com/items?itemName=freebroccolo.reasonml) extension if you attach a vscode instance to a container running this image.
+[unisonweb/vscode-devcontainer](https://github.com/unisonweb/vscode-devcontainer) which introduced me to devcontainers. You can learn more about the incredible Unison language at https://www.unisonweb.org/.
