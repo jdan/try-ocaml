@@ -1,6 +1,7 @@
 {
   "name": "OCaml 4.08.1 (alpine)",
   "dockerFile": "Dockerfile",
+  "postCreateCommand": "make build",
   "extensions": [
     "freebroccolo.reasonml"
   ]
